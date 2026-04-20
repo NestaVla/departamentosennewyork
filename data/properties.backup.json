@@ -1,0 +1,610 @@
+[
+  {
+    "id": "35-206-1",
+    "type": "1br",
+    "badge": "1 Bedroom",
+    "demand": "",
+    "zone": "35-206",
+    "name": "35-206-1",
+    "guests": "3 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "Patio · A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/35-206-1/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/35-206-1/1.jpg",
+      "/assets/images/departments/35-206-1/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 35-206-1 en Manhattan"
+  },
+  {
+    "id": "35-206-2",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "35-206",
+    "name": "35-206-2",
+    "guests": "5 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/35-206-2/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/35-206-2/1.jpg",
+      "/assets/images/departments/35-206-2/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 35-206-2 en Manhattan"
+  },
+  {
+    "id": "35-206-3",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "35-206",
+    "name": "35-206-3",
+    "guests": "6 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/35-206-3/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/35-206-3/1.jpg",
+      "/assets/images/departments/35-206-3/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 35-206-3 en Manhattan"
+  },
+  {
+    "id": "35-206-4",
+    "type": "all",
+    "badge": "Unidad",
+    "demand": "",
+    "zone": "35-206",
+    "name": "35-206-4",
+    "guests": "Confirmar",
+    "bathrooms": "Confirmar",
+    "extra": "Completar datos",
+    "price": 0,
+    "cover": "/assets/images/departments/35-206-4/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/35-206-4/1.jpg",
+      "/assets/images/departments/35-206-4/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 35-206-4 en Manhattan"
+  },
+  {
+    "id": "35-208-1",
+    "type": "1br",
+    "badge": "1 Bedroom",
+    "demand": "",
+    "zone": "35-208",
+    "name": "35-208-1",
+    "guests": "4 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "Patio · A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/35-208-1/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/35-208-1/1.jpg",
+      "/assets/images/departments/35-208-1/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 35-208-1 en Manhattan"
+  },
+  {
+    "id": "35-208-2",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "35-208",
+    "name": "35-208-2",
+    "guests": "6 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/35-208-2/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/35-208-2/1.jpg",
+      "/assets/images/departments/35-208-2/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 35-208-2 en Manhattan"
+  },
+  {
+    "id": "35-208-3",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "35-208",
+    "name": "35-208-3",
+    "guests": "5 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/35-208-3/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/35-208-3/1.jpg",
+      "/assets/images/departments/35-208-3/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 35-208-3 en Manhattan"
+  },
+  {
+    "id": "35-208-4",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "35-208",
+    "name": "35-208-4",
+    "guests": "6 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/35-208-4/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/35-208-4/1.jpg",
+      "/assets/images/departments/35-208-4/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 35-208-4 en Manhattan"
+  },
+  {
+    "id": "MAD-1A",
+    "type": "studio",
+    "badge": "Studio",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-1A",
+    "guests": "3 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "Balcón · A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-1A/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-1A/1.jpg",
+      "/assets/images/departments/MAD-1A/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-1A en Manhattan"
+  },
+  {
+    "id": "MAD-1B",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-1B",
+    "guests": "5 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "Balcón · A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-1B/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-1B/1.jpg",
+      "/assets/images/departments/MAD-1B/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-1B en Manhattan"
+  },
+  {
+    "id": "MAD-1C",
+    "type": "studio",
+    "badge": "Studio",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-1C",
+    "guests": "5 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-1C/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-1C/1.jpg",
+      "/assets/images/departments/MAD-1C/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-1C en Manhattan"
+  },
+  {
+    "id": "MAD-2A",
+    "type": "studio",
+    "badge": "Studio",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-2A",
+    "guests": "4 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-2A/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-2A/1.jpg",
+      "/assets/images/departments/MAD-2A/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-2A en Manhattan"
+  },
+  {
+    "id": "MAD-2B",
+    "type": "studio",
+    "badge": "Studio",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-2B",
+    "guests": "4 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-2B/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-2B/1.jpg",
+      "/assets/images/departments/MAD-2B/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-2B en Manhattan"
+  },
+  {
+    "id": "MAD-2C",
+    "type": "studio",
+    "badge": "Studio",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-2C",
+    "guests": "5 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-2C/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-2C/1.jpg",
+      "/assets/images/departments/MAD-2C/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-2C en Manhattan"
+  },
+  {
+    "id": "MAD-3A",
+    "type": "studio",
+    "badge": "Studio",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-3A",
+    "guests": "3 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-3A/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-3A/1.jpg",
+      "/assets/images/departments/MAD-3A/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-3A en Manhattan"
+  },
+  {
+    "id": "MAD-3C",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-3C",
+    "guests": "5 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-3C/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-3C/1.jpg",
+      "/assets/images/departments/MAD-3C/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-3C en Manhattan"
+  },
+  {
+    "id": "MAD-4A",
+    "type": "studio",
+    "badge": "Studio",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-4A",
+    "guests": "3 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-4A/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-4A/1.jpg",
+      "/assets/images/departments/MAD-4A/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-4A en Manhattan"
+  },
+  {
+    "id": "MAD-4B",
+    "type": "1br",
+    "badge": "1 Bedroom",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-4B",
+    "guests": "3 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-4B/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-4B/1.jpg",
+      "/assets/images/departments/MAD-4B/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-4B en Manhattan"
+  },
+  {
+    "id": "MAD-4C",
+    "type": "1br",
+    "badge": "1 Bedroom",
+    "demand": "",
+    "zone": "MAD",
+    "name": "MAD-4C",
+    "guests": "3 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/MAD-4C/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/MAD-4C/1.jpg",
+      "/assets/images/departments/MAD-4C/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento MAD-4C en Manhattan"
+  },
+  {
+    "id": "31-108-3",
+    "type": "3br",
+    "badge": "4 Bedrooms",
+    "demand": "",
+    "zone": "31-108",
+    "name": "31-108-3",
+    "guests": "8 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/31-108-3/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/31-108-3/1.jpg",
+      "/assets/images/departments/31-108-3/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 31-108-3 en Manhattan"
+  },
+  {
+    "id": "31-108-4",
+    "type": "3br",
+    "badge": "3 Bedrooms",
+    "demand": "",
+    "zone": "31-108",
+    "name": "31-108-4",
+    "guests": "6 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/31-108-4/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/31-108-4/1.jpg",
+      "/assets/images/departments/31-108-4/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 31-108-4 en Manhattan"
+  },
+  {
+    "id": "31-106-1A",
+    "type": "all",
+    "badge": "Unidad",
+    "demand": "",
+    "zone": "31-106",
+    "name": "31-106-1A",
+    "guests": "Confirmar",
+    "bathrooms": "Confirmar",
+    "extra": "Completar datos",
+    "price": 0,
+    "cover": "/assets/images/departments/31-106-1A/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/31-106-1A/1.jpg",
+      "/assets/images/departments/31-106-1A/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 31-106-1A en Manhattan"
+  },
+  {
+    "id": "31-106-2A",
+    "type": "1br",
+    "badge": "1 Bedroom",
+    "demand": "",
+    "zone": "31-106",
+    "name": "31-106-2A",
+    "guests": "3 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/31-106-2A/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/31-106-2A/1.jpg",
+      "/assets/images/departments/31-106-2A/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 31-106-2A en Manhattan"
+  },
+  {
+    "id": "31-106-3A",
+    "type": "1br",
+    "badge": "1 Bedroom",
+    "demand": "",
+    "zone": "31-106",
+    "name": "31-106-3A",
+    "guests": "4 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/31-106-3A/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/31-106-3A/1.jpg",
+      "/assets/images/departments/31-106-3A/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 31-106-3A en Manhattan"
+  },
+  {
+    "id": "31-106-3B",
+    "type": "studio",
+    "badge": "Studio",
+    "demand": "",
+    "zone": "31-106",
+    "name": "31-106-3B",
+    "guests": "2 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/31-106-3B/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/31-106-3B/1.jpg",
+      "/assets/images/departments/31-106-3B/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 31-106-3B en Manhattan"
+  },
+  {
+    "id": "Church-2",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "Church",
+    "name": "Church-2",
+    "guests": "6 huéspedes",
+    "bathrooms": "2 baños",
+    "extra": "Ascensor · Laundry · Dishwasher",
+    "price": 0,
+    "cover": "/assets/images/departments/Church-2/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/Church-2/1.jpg",
+      "/assets/images/departments/Church-2/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento Church-2 en Manhattan"
+  },
+  {
+    "id": "Church-3",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "Church",
+    "name": "Church-3",
+    "guests": "4 huéspedes",
+    "bathrooms": "2 baños",
+    "extra": "Ascensor · Laundry · Dishwasher",
+    "price": 0,
+    "cover": "/assets/images/departments/Church-3/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/Church-3/1.jpg",
+      "/assets/images/departments/Church-3/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento Church-3 en Manhattan"
+  },
+  {
+    "id": "Church-4",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "Church",
+    "name": "Church-4",
+    "guests": "5 huéspedes",
+    "bathrooms": "2 baños",
+    "extra": "Ascensor · Laundry · Dishwasher",
+    "price": 0,
+    "cover": "/assets/images/departments/Church-4/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/Church-4/1.jpg",
+      "/assets/images/departments/Church-4/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento Church-4 en Manhattan"
+  },
+  {
+    "id": "120-58-3C",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "120-58",
+    "name": "120-58-3C",
+    "guests": "5 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "Ascensor · Laundry · Dishwasher",
+    "price": 0,
+    "cover": "/assets/images/departments/120-58-3C/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/120-58-3C/1.jpg",
+      "/assets/images/departments/120-58-3C/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 120-58-3C en Manhattan"
+  },
+  {
+    "id": "120-58-5C",
+    "type": "1br",
+    "badge": "1 Bedroom",
+    "demand": "",
+    "zone": "120-58",
+    "name": "120-58-5C",
+    "guests": "5 huéspedes",
+    "bathrooms": "1 baño",
+    "extra": "Ascensor · Laundry · A/C",
+    "price": 0,
+    "cover": "/assets/images/departments/120-58-5C/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/120-58-5C/1.jpg",
+      "/assets/images/departments/120-58-5C/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 120-58-5C en Manhattan"
+  },
+  {
+    "id": "120-58-4D",
+    "type": "2br",
+    "badge": "2 Bedrooms",
+    "demand": "",
+    "zone": "120-58",
+    "name": "120-58-4D",
+    "guests": "5 huéspedes",
+    "bathrooms": "2 baños",
+    "extra": "Ascensor · Laundry · Dishwasher",
+    "price": 0,
+    "cover": "/assets/images/departments/120-58-4D/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/120-58-4D/1.jpg",
+      "/assets/images/departments/120-58-4D/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 120-58-4D en Manhattan"
+  },
+  {
+    "id": "712W-175",
+    "type": "all",
+    "badge": "Unidad",
+    "demand": "",
+    "zone": "712W",
+    "name": "712W-175",
+    "guests": "Confirmar",
+    "bathrooms": "Confirmar",
+    "extra": "Completar datos",
+    "price": 0,
+    "cover": "/assets/images/departments/712W-175/cover.jpg",
+    "gallery": [
+      "/assets/images/departments/712W-175/1.jpg",
+      "/assets/images/departments/712W-175/2.jpg"
+    ],
+    "video": "",
+    "alt": "Departamento 712W-175 en Manhattan"
+  }
+]
