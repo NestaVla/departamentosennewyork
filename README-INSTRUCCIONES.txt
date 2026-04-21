@@ -1,20 +1,32 @@
-PACK SEO
+PACK SEO SEGURO
 
-Incluye:
-- index.html
+IMPORTANTE:
+Este pack NO reemplaza tu home.
+Solo agrega 4 páginas nuevas para SEO.
+Así no volvés a romper la home, el blog ni la sección de consulta.
+
+ARCHIVOS:
 - midtown-manhattan.html
 - upper-west-side.html
 - studios-en-manhattan.html
 - departamentos-para-5-personas-nyc.html
 
-Qué hacer:
-1. Descomprimí este zip.
-2. Copiá esos 5 archivos a tu carpeta local del repo: departamentosennewyork
-3. Reemplazá los archivos si te lo pide.
-4. Abrí GitHub Desktop.
-5. Hacé commit.
-6. Hacé push.
-7. Esperá el redeploy de Vercel.
+QUE HACER:
+1. Descargá este zip.
+2. Descomprimilo.
+3. Abrí tu carpeta local del repo: departamentosennewyork
+4. Copiá solo estos 4 archivos dentro de esa carpeta.
+5. NO reemplaces index.html.
+6. Abrí GitHub Desktop.
+7. Hacé commit.
+8. Hacé push.
+9. Esperá el redeploy de Vercel.
 
-No hace falta tocar assets/.
-No hace falta tocar Vercel.
+DESPUÉS:
+Probá estas URLs:
+- /midtown-manhattan.html
+- /upper-west-side.html
+- /studios-en-manhattan.html
+- /departamentos-para-5-personas-nyc.html
+
+Si todo eso anda, recién después hacemos la home SEO mejorada, pero sin tocar lo que ya funciona.
