@@ -1,9 +1,10 @@
-# DepartamentosEnNewYork v7
+# DepartamentosEnNewYork final
 
-Versión autocontenida con:
-- filtros por cantidad de personas
-- CTA de precios directo a WhatsApp
-- modal limpio
-- títulos creativos y diferenciados
-- métricas actualizadas
-- 50 reseñas de muestra diferenciadas
+Versión autocontenida y estable.
+
+Reemplazá en tu repo:
+- index.html
+- README.md
+- vercel.json
+
+Mantiene tus carpetas de imágenes en assets/images/departments/ID.
