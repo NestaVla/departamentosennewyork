@@ -1,7 +1,9 @@
-# DepartamentosEnNewYork
+# DepartamentosEnNewYork v7
 
-Versión v6 autoconclusiva.
-
-- Toda la lógica y el contenido están dentro de `index.html`.
-- No depende de `data/properties.js`, `data/reviews.js` ni `data/blog.js` para renderizar cards.
-- Mantiene las rutas de imágenes en `assets/images/departments/...`.
+Versión autocontenida con:
+- filtros por cantidad de personas
+- CTA de precios directo a WhatsApp
+- modal limpio
+- títulos creativos y diferenciados
+- métricas actualizadas
+- 50 reseñas de muestra diferenciadas
