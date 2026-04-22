@@ -3,40 +3,234 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Departamentos para 5 personas NYC</title>
-<meta name="description" content="Find apartments designed for groups and families, with enough space to stay comfortably in Manhattan.">
+<title>Departamentos para 5 o más Personas en NYC – Alquiler Grupal Manhattan | New York Aparts</title>
+<meta name="description" content="Departamentos para grupos y familias en Manhattan. Studios grandes, 2BR y 3BR para 5, 6, 7 u 8 personas. Sin comisiones. Atención directa por WhatsApp. Mejor que un hotel.">
+<link rel="canonical" href="https://newyorkaparts.com/departamentos-para-5-personas-nyc">
+<meta property="og:title" content="Departamentos para 5 o más Personas en NYC – Alquiler Grupal Manhattan">
+<meta property="og:description" content="Departamentos para grupos y familias en Manhattan. Studios grandes, 2BR y 3BR para 5, 6, 7 u 8 personas. Sin comisiones. Atención directa por WhatsApp. Mejor que un hotel.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-body{font-family:Arial;margin:0;background:#fafaf8;color:#111;line-height:1.6}
-.container{max-width:1000px;margin:auto;padding:40px 20px}
-.hero{background:#111;color:#fff;padding:80px 20px}
-.cta{display:inline-block;margin-top:20px;padding:14px 20px;background:#c8a96e;color:#111;text-decoration:none;font-weight:bold}
-h1,h2{margin-bottom:15px}
-ul{padding-left:20px}
+:root{--black:#0a0a0a;--white:#fafaf8;--cream:#f5f0e8;--gold:#c8a96e;--gold-light:#e8d5a3;--green:#1a3a2a;--green-mid:#2d5a3d;--text:#1c1c1c;--text-muted:#6b6b6b;--wa:#25D366;--shadow:0 4px 40px rgba(0,0,0,.12)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 3rem;background:rgba(10,10,10,.93);backdrop-filter:blur(16px);border-bottom:1px solid rgba(200,169,110,.12)}
+.nav-logo{font-family:'Playfair Display',serif;color:#fff;font-size:1.35rem;font-weight:700;text-decoration:none}.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:2rem;list-style:none}.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.82rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;transition:color .2s}.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:var(--black)!important;padding:.5rem 1.3rem;border-radius:4px;font-weight:600!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}.hamburger span{width:24px;height:2px;background:#fff;display:block}
+.mobile-open{display:flex!important;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0a0a0a;padding:1.5rem 1.5rem 2rem;gap:1.5rem}
+.breadcrumb{background:var(--cream);padding:.7rem 3rem;font-size:.78rem;color:var(--text-muted);margin-top:70px}
+.breadcrumb a{color:var(--gold);text-decoration:none}
+.page-hero{min-height:75vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1600&q=80') center/cover;z-index:0}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,.88) 0%,rgba(26,58,42,.68) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:4rem 3rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(200,169,110,.13);border:1px solid rgba(200,169,110,.35);color:var(--gold);padding:.38rem 1rem;border-radius:100px;font-size:.74rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.5rem;animation:fadeUp .8s ease both}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5.5vw,4.6rem);font-weight:900;color:#fff;line-height:1.08;letter-spacing:-1px;margin-bottom:1.2rem;animation:fadeUp .8s .1s ease both}
+.page-hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero-sub{color:rgba(255,255,255,.72);font-size:1.05rem;font-weight:300;max-width:560px;line-height:1.75;margin-bottom:2rem;animation:fadeUp .8s .2s ease both}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .8s .3s ease both}
+.hero-stats{display:flex;gap:2.5rem;margin-top:3.5rem;flex-wrap:wrap;animation:fadeUp .8s .4s ease both}
+.stat-num{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;color:var(--gold)}
+.stat-label{font-size:.72rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-top:.15rem}
+.btn-primary{display:inline-flex;align-items:center;gap:.6rem;background:var(--gold);color:var(--black);padding:.95rem 1.9rem;border-radius:6px;font-weight:700;font-size:.92rem;text-decoration:none;transition:all .25s}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,169,110,.4)}
+.btn-outline{display:inline-flex;align-items:center;gap:.6rem;background:transparent;color:#fff;padding:.95rem 1.9rem;border-radius:6px;font-weight:500;font-size:.92rem;text-decoration:none;border:1px solid rgba(255,255,255,.3);transition:all .25s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.section{padding:5rem 3rem}.section-alt{background:var(--cream)}
+.container{max-width:1200px;margin:0 auto}
+.section-tag{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);margin-bottom:.6rem}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:700;color:var(--text);line-height:1.2}
+.section-sub{color:var(--text-muted);margin-top:.6rem;font-size:.95rem;font-weight:300}
+.section-header{margin-bottom:3rem}
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.card{background:#fff;border-radius:14px;padding:2rem;border:1px solid rgba(200,169,110,.12);transition:all .3s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transform:scaleX(0);transition:transform .3s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card:hover::before{transform:scaleX(1)}
+.card-icon{font-size:1.8rem;margin-bottom:.8rem}
+.card-title{font-weight:600;font-size:1rem;margin-bottom:.5rem}
+.card-text{font-size:.87rem;color:var(--text-muted);line-height:1.65;font-weight:300}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.two-col img{width:100%;border-radius:16px;object-fit:cover;height:380px}
+.prose h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;margin:2.5rem 0 .8rem}
+.prose h3{font-size:1.1rem;font-weight:600;margin:1.8rem 0 .6rem}
+.prose p{color:var(--text-muted);line-height:1.8;margin-bottom:1.1rem;font-weight:300;font-size:.97rem}
+.prose ul{list-style:none;margin-bottom:1.2rem}
+.prose ul li{padding:.45rem 0 .45rem 1.4rem;position:relative;color:var(--text-muted);font-size:.95rem;font-weight:300;border-bottom:1px solid #eee}
+.prose ul li:last-child{border-bottom:none}
+.prose ul li::before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:700}
+.faq-list{max-width:780px}
+.faq-item{border-bottom:1px solid #eee;padding:1.2rem 0}
+.faq-q{font-weight:600;font-size:.97rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-q::after{content:'+';font-size:1.3rem;color:var(--gold);flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{font-size:.9rem;color:var(--text-muted);line-height:1.75;font-weight:300;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
+.faq-item.open .faq-a{max-height:300px;padding-top:.75rem}
+.cta-section{background:linear-gradient(135deg,var(--green),var(--green-mid));padding:4rem 3rem;text-align:center}
+.cta-section h2{font-family:'Playfair Display',serif;font-size:2rem;color:#fff;margin-bottom:.75rem}
+.cta-section p{color:rgba(255,255,255,.72);margin-bottom:1.75rem;font-weight:300}
+.cta-actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.btn-wa{background:var(--wa);color:#fff;display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 2rem;border-radius:8px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .25s}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,211,102,.35)}
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:999}
+.wa-float-btn{width:58px;height:58px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.45);text-decoration:none;animation:bounce 3s infinite;transition:transform .2s}
+.wa-float-btn:hover{transform:scale(1.1);animation:none}
+.wa-float-btn svg{width:28px;height:28px;fill:#fff}
+.wa-tooltip{position:absolute;bottom:66px;right:0;background:#fff;border-radius:10px;padding:.7rem 1.1rem;box-shadow:0 4px 20px rgba(0,0,0,.13);white-space:nowrap;font-size:.82rem;font-weight:500;pointer-events:none;opacity:0;transform:translateY(5px);transition:all .3s}
+.wa-float:hover .wa-tooltip{opacity:1;transform:translateY(0)}
+footer{background:var(--black);color:rgba(255,255,255,.55);padding:2.5rem 3rem 1.5rem}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;margin-bottom:2rem}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:#fff;font-weight:700;margin-bottom:.5rem}.footer-logo span{color:var(--gold)}
+.footer-desc{font-size:.82rem;line-height:1.7;max-width:240px;font-weight:300}
+.footer-links-col h4{color:#fff;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.8rem}
+.footer-links-col a{display:block;color:rgba(255,255,255,.45);text-decoration:none;font-size:.82rem;margin-bottom:.4rem;font-weight:300;transition:color .2s}.footer-links-col a:hover{color:var(--gold)}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.07);font-size:.76rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.reveal{opacity:0;transform:translateY(28px);transition:all .7s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+.dot-red{width:8px;height:8px;background:#ff4757;border-radius:50%;animation:pulse 1.5s infinite;display:inline-block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}.nav-links{display:none}.hamburger{display:flex}
+  .section,.cta-section{padding:3.5rem 1.5rem}.breadcrumb{padding:.7rem 1.5rem}
+  .hero-inner{padding:3rem 1.5rem}.page-hero h1{font-size:clamp(2rem,7vw,3rem)}
+  .cards-grid{grid-template-columns:1fr}.two-col{grid-template-columns:1fr;gap:2rem}
+  .two-col img{height:220px}.hero-stats{gap:1.5rem}.hero-actions{flex-direction:column}
+  .cta-actions{flex-direction:column;align-items:center}
+}
 </style>
 </head>
 <body>
 
-<div class="hero">
-<div class="container">
-<h1>Apartments for 5 people in New York City</h1>
-<p>Find apartments designed for groups and families, with enough space to stay comfortably in Manhattan.</p>
-<a href="https://wa.me/13522600070" class="cta">Consultar por WhatsApp</a>
-</div>
-</div>
+<nav>
+  <a class="nav-logo" href="index.html"><span>NY</span> Aparts</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#propiedades">Propiedades</a></li>
+    <li><a href="index.html#beneficios">Beneficios</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#contacto" class="nav-cta">Consultar ahora</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
 
-<div class="container">
-
-<h2>Traveling in a group</h2>
-<p>Staying together improves the experience and often reduces costs compared to multiple hotel rooms.</p>
-
-<h2>Features</h2>
-<ul>
-<li>Multiple beds</li>
-<li>Living space</li>
-<li>Kitchen</li>
-</ul>
-
+<div class="breadcrumb">
+  <a href="index.html">Inicio</a> › Departamentos para grupos NYC
 </div>
 
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">👥 Grupos y familias · Manhattan</div>
+    <h1>Departamentos para grupos<em>5+ personas en NYC</em></h1>
+    <p class="hero-sub">Para familias grandes, grupos de amigos o viajes corporativos. Más espacio, más privacidad y un precio real por persona muy inferior a reservar múltiples habitaciones de hotel.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/13522600070?text=Hola%2C%20somos%20un%20grupo%20y%20quiero%20consultar%20departamentos%20para%205%20o%20m%C3%A1s%20personas%20en%20NYC" target="_blank" class="btn-primary">💬 Consultar disponibilidad</a>
+      <a href="index.html#propiedades" class="btn-outline">🏙️ Ver departamentos</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Personas max.</div></div>
+      <div class="stat"><div class="stat-num">3BR</div><div class="stat-label">Unidades disponibles</div></div>
+      <div class="stat"><div class="stat-num">60%</div><div class="stat-label">Menos que varios hoteles</div></div>
+      <div class="stat"><div class="stat-num">4.9★</div><div class="stat-label">Calificación grupos</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal">
+        <div class="section-tag">¿Por qué rentar un apartamento entero?</div>
+        <h2 class="section-title">El error más costoso: reservar cuartos de hotel separados para un grupo</h2>
+        <div class="prose" style="margin-top:1.5rem">
+          <p>5 personas, 3 habitaciones de hotel en NYC: mínimo USD 750/noche en total. Un departamento de 2BR en nuestro portafolio: desde USD 260/noche para el mismo grupo. La diferencia es enorme — y el departamento ofrece mucho más: cocina propia, sala donde reunirse, privacidad real.</p>
+          <p>Trabajamos con familias numerosas, grupos de amigos, equipos de trabajo y cualquier viajero que viaje en grupo de 4 o más personas. Tenemos soluciones para grupos de hasta 10 personas en una misma unidad.</p>
+          <h3>Opciones según el tamaño del grupo:</h3>
+          <ul><li>2 Bedrooms: ideal para 4–6 personas</li><li>3 Bedrooms: ideal para 6–8 personas</li><li>Penthouse: capacidad para hasta 10 personas</li><li>Cocina grande para comer juntos y ahorrar</li><li>Sala de estar para reunirse sin alquilar espacios extra</li></ul>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=80" alt="Departamento grande para grupo en Manhattan" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Beneficios</div>
+      <h2 class="section-title">Por qué elegir New York Aparts</h2>
+      <p class="section-sub">Todo lo que una plataforma no puede ofrecerte</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card reveal"><div class="card-icon">💸</div><div class="card-title">Ahorro real por persona</div><p class="card-text">Dividido entre 5 o 6, un departamento en Manhattan puede salir USD 40–80 por persona por noche. Eso incluye cocina, sala y baño privado. Ningún hotel lo supera.</p></div><div class="card reveal"><div class="card-icon">🍳</div><div class="card-title">Cocinás y ahorrás más</div><p class="card-text">Con cocina propia, el desayuno y alguna cena pueden ser en el departamento. Para grupos, eso puede significar USD 100–200 de ahorro diario en comidas.</p></div><div class="card reveal"><div class="card-icon">🛋️</div><div class="card-title">Espacio para estar juntos</div><p class="card-text">Los hoteles obligan al grupo a juntarse en el pasillo o en el lobby. En el departamento tenés sala de estar, comedor y balcón (según la unidad) para estar cómodos.</p></div><div class="card reveal"><div class="card-icon">📍</div><div class="card-title">Ubicaciones centrales</div><p class="card-text">Todos nuestros departamentos grandes están en zonas estratégicas: Midtown, Chelsea, Upper West Side, Upper East Side. Ninguno a más de 5 cuadras del metro.</p></div><div class="card reveal"><div class="card-icon">🔑</div><div class="card-title">Una sola llave, un solo lugar</div><p class="card-text">No coordinar taxis a distintos hoteles, no perderse. Todos juntos, en el mismo lugar, desde el primer día.</p></div><div class="card reveal"><div class="card-icon">📱</div><div class="card-title">Reserva simple por WhatsApp</div><p class="card-text">Contanos cuántas personas son, las fechas y el presupuesto. Te mostramos las opciones que encajan sin necesidad de registrarte en ninguna plataforma.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Preguntas frecuentes</div>
+      <h2 class="section-title">Resolvemos tus dudas</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><div class="faq-q">¿Cuántas personas puede alojar el departamento más grande?</div><div class="faq-a">Nuestro departamento más grande (penthouse 3BR) puede alojar hasta 10 personas con camas y sofás camas combinados. Para grupos mayores podemos coordinar unidades en el mismo edificio.</div></div><div class="faq-item"><div class="faq-q">¿Cómo se divide el costo entre el grupo?</div><div class="faq-a">El precio es por departamento, no por persona. Dividan el total entre todos los integrantes del grupo. En general sale entre USD 40 y 100 por persona por noche, según el departamento elegido.</div></div><div class="faq-item"><div class="faq-q">¿Cuántos baños tiene el departamento para 5 personas?</div><div class="faq-a">Nuestros 2BR tienen 1 o 2 baños según la unidad, y los 3BR tienen siempre 2 baños completos. Lo aclaramos en cada ficha.</div></div><div class="faq-item"><div class="faq-q">¿Puedo hacer una fiesta o reunión en el departamento?</div><div class="faq-a">Pequeñas reuniones entre los mismos huéspedes son OK. Eventos con personas externas o fiestas con música alta no están permitidos. Las normas del edificio son las que aplican.</div></div><div class="faq-item"><div class="faq-q">¿El precio varía mucho según el tamaño del grupo?</div><div class="faq-a">El precio es por departamento, no por persona. Un 2BR cuesta igual para 2 personas que para 5. Por eso los grupos grandes son los que más se benefician del alquiler directo.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">También te puede interesar</div>
+      <h2 class="section-title">Más páginas útiles</h2>
+    </div>
+    <div class="cards-grid reveal">
+      <a href="alquiler-temporario-manhattan.html" style="text-decoration:none"><div class="card"><div class="card-icon">🏙️</div><div class="card-title">Alquiler temporario Manhattan</div><p class="card-text">Todo sobre el alquiler directo en Manhattan. Sin comisiones, sin intermediarios.</p></div></a>
+      <a href="departamentos-sin-comision-nyc.html" style="text-decoration:none"><div class="card"><div class="card-icon">💸</div><div class="card-title">Sin comisiones NYC</div><p class="card-text">Cuánto ahorrás exactamente al reservar directo sin Airbnb ni Booking.</p></div></a>
+      <a href="index.html#contacto" style="text-decoration:none"><div class="card"><div class="card-icon">💬</div><div class="card-title">Contacto directo</div><p class="card-text">Escribinos por WhatsApp y te respondemos en minutos con disponibilidad real.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <div style="max-width:700px;margin:0 auto">
+    <div style="display:flex;justify-content:center;gap:.4rem;margin-bottom:1rem"><span class="dot-red"></span><span class="dot-red" style="animation-delay:.3s"></span><span class="dot-red" style="animation-delay:.6s"></span></div>
+    <h2>¿Cuántas personas viajan?</h2>
+    <p>Contanos el tamaño del grupo, las fechas y la zona preferida. Te respondemos con las mejores opciones sin compromiso.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/13522600070?text=Hola%2C%20somos%20un%20grupo%20y%20quiero%20consultar%20departamentos%20para%205%20o%20m%C3%A1s%20personas%20en%20NYC" target="_blank" class="btn-wa">💬 Consultar por WhatsApp</a>
+      <a href="index.html#propiedades" class="btn-primary" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)">Ver todos los departamentos</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-logo"><span>NY</span> Aparts</div><p class="footer-desc">Alquiler temporario en Manhattan sin comisiones. Atención en español, respuesta inmediata.</p></div>
+    <div class="footer-links-col"><h4>Páginas</h4><a href="alquiler-temporario-manhattan.html">Alquiler temporario</a><a href="studios-en-manhattan.html">Studios Manhattan</a><a href="midtown-manhattan.html">Midtown Manhattan</a><a href="upper-west-side.html">Upper West Side</a></div>
+    <div class="footer-links-col"><h4>Más info</h4><a href="departamentos-sin-comision-nyc.html">Sin comisión NYC</a><a href="departamentos-para-5-personas-nyc.html">Grupos y familias</a><a href="apartamentos-por-semana-nyc.html">Alquiler semanal</a><a href="short-stay-nyc.html">Short stay NYC</a></div>
+    <div class="footer-links-col"><h4>Contacto</h4><a href="https://wa.me/13522600070" target="_blank">📱 +1 352 260 0070</a><a href="https://instagram.com/newyorkaparts" target="_blank">📸 @newyorkaparts</a><a href="index.html">🏠 Inicio</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 New York Aparts</span><span>Alquiler temporario Manhattan · Sin comisiones</span></div>
+</footer>
+
+<div class="wa-float">
+  <div class="wa-tooltip">💬 Chateá con nosotros</div>
+  <a href="https://wa.me/13522600070?text=Hola%2C%20quiero%20consultar%20disponibilidad%20en%20Manhattan" target="_blank" class="wa-float-btn">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('mobile-open')}
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const i=q.parentElement;document.querySelectorAll('.faq-item.open').forEach(o=>{if(o!==i)o.classList.remove('open')});i.classList.toggle('open')})}); 
+</script>
 </body>
 </html>
