@@ -123,7 +123,15 @@ a{color:inherit}
 .property-feat{background:var(--cream);border:1px solid rgba(51,64,67,.08);border-radius:999px;padding:7px 10px;font-size:.82rem;color:var(--muted);font-weight:650}
 .property-bottom{display:flex;gap:10px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px}
 .price-link{color:var(--terracotta);font-weight:900;text-decoration:none}
-.btn-detail{background:var(--ink);color:white;border:0;border-radius:12px;padding:12px 14px;font-weight:900;cursor:pointer;white-space:nowrap}
+.property-link{display:block;color:inherit;text-decoration:none}
+.property-name a{color:inherit;text-decoration:none}
+.property-name a:hover{color:var(--terracotta)}
+.property-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.btn-detail{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;border:0;border-radius:12px;padding:12px 14px;font-weight:900;cursor:pointer;white-space:nowrap;text-decoration:none;line-height:1}
+.btn-detail:hover{background:var(--terracotta);color:white}
+.btn-wa-card{display:inline-flex;align-items:center;justify-content:center;background:rgba(194,122,94,.12);border:1px solid rgba(194,122,94,.25);color:var(--terracotta);border-radius:12px;padding:12px 14px;font-weight:900;text-decoration:none;white-space:nowrap;line-height:1}
+.btn-wa-card:hover{background:var(--terracotta);color:white}
+@media(max-width:640px){.property-bottom{align-items:flex-start}.property-actions{width:100%;justify-content:stretch}.btn-detail,.btn-wa-card{flex:1}.property-img{height:210px}}
 .pager{display:flex;justify-content:center;gap:12px;margin-top:28px}
 .pager-btn{border:1px solid var(--line);background:white;border-radius:999px;padding:12px 18px;font-weight:900;cursor:pointer}
 .pager-btn:disabled{opacity:.4;cursor:not-allowed}
@@ -675,22 +683,63 @@ function pStairs(p){ return lang==='es' ? p.stairs_es : p.stairs_en; }
 function guestGroup(g){ if(g == null) return 'all'; if(g<=2) return '1-2'; if(g<=4) return '3-4'; if(g<=6) return '5-6'; return '7+'; }
 function waBase(){ return lang==='es' ? 'Hola, quiero consultar disponibilidad en New York Aparts' : 'Hi, I want to check availability with New York Aparts'; }
 function propertyWA(p){ return `https://wa.me/13522600070?text=${encodeURIComponent(`${waBase()} | ${pName(p)} | ${p.id}`)}`; }
+const propertyDetailUrls = {
+  "35-206-1": "/departamentos/35-206-1-1-dormitorio-con-patio-privado-en-upper-manhattan.html",
+  "35-206-2": "/departamentos/35-206-2-2-dormitorios-para-5-huespedes-en-upper-manhattan.html",
+  "35-206-3": "/departamentos/35-206-3-duplex-amplio-para-grupos-en-upper-manhattan.html",
+  "35-206-4": "/departamentos/35-206-4-departamento-versatil-en-upper-manhattan.html",
+  "35-208-1": "/departamentos/35-208-1-1-dormitorio-luminoso-con-patio-en-upper-manhattan.html",
+  "35-208-2": "/departamentos/35-208-2-2-dormitorios-para-6-personas-en-manhattan.html",
+  "35-208-3": "/departamentos/35-208-3-duplex-comodo-para-estadias-en-manhattan.html",
+  "35-208-4": "/departamentos/35-208-4-triplex-para-grupos-en-upper-manhattan.html",
+  "MAD-1A": "/departamentos/mad-1a-studio-con-balcon-en-midtown-manhattan.html",
+  "MAD-1B": "/departamentos/mad-1b-2-dormitorios-con-balcon-cerca-de-midtown.html",
+  "MAD-1C": "/departamentos/mad-1c-studio-amplio-de-techos-altos-en-midtown-manhattan.html",
+  "MAD-2A": "/departamentos/mad-2a-studio-duplex-para-4-huespedes-en-midtown.html",
+  "MAD-2B": "/departamentos/mad-2b-studio-practico-para-recorrer-manhattan.html",
+  "MAD-2C": "/departamentos/mad-2c-studio-amplio-para-estadias-cortas-en-midtown.html",
+  "MAD-3A": "/departamentos/mad-3a-studio-clasico-y-compacto-en-midtown.html",
+  "MAD-3C": "/departamentos/mad-3c-2-dormitorios-funcional-en-midtown-manhattan.html",
+  "MAD-4A": "/departamentos/mad-4a-studio-economico-en-ubicacion-estrategica-de-manhattan.html",
+  "MAD-4B": "/departamentos/mad-4b-1-dormitorio-tranquilo-en-midtown-manhattan.html",
+  "MAD-4C": "/departamentos/mad-4c-1-dormitorio-acogedor-para-parejas-en-midtown.html",
+  "31-108-3": "/departamentos/31-108-3-4-dormitorios-para-grupos-grandes-en-manhattan.html",
+  "31-108-4": "/departamentos/31-108-4-3-dormitorios-familiar-para-estadias-en-nyc.html",
+  "31-106-1A": "/departamentos/31-106-1a-apartamento-en-central-manhattan.html",
+  "31-106-2A": "/departamentos/31-106-2a-1-dormitorio-funcional-en-central-manhattan.html",
+  "31-106-3A": "/departamentos/31-106-3a-1-dormitorio-para-4-huespedes-en-manhattan-central.html",
+  "31-106-3B": "/departamentos/31-106-3b-studio-comodo-para-una-escapada-a-manhattan.html",
+  "Church-2": "/departamentos/church-2-2-dormitorios-con-ascensor-en-church-street.html",
+  "Church-3": "/departamentos/church-3-2-dormitorios-modernos-cerca-del-downtown.html",
+  "Church-4": "/departamentos/church-4-2-dormitorios-para-5-huespedes-en-church-street.html",
+  "120-58-3C": "/departamentos/120-58-3c-2-dormitorios-moderno-en-midtown-west.html",
+  "120-58-5C": "/departamentos/120-58-5c-1-dormitorio-con-ascensor-en-midtown-west.html",
+  "120-58-4D": "/departamentos/120-58-4d-2-dormitorios-amplio-con-2-banos-en-midtown-west.html",
+  "712W-175": "/departamentos/712w-175-apartamento-en-upper-west-side-cerca-de-todo.html"
+};
+function propertyURL(p){ return propertyDetailUrls[p.id] || ''; }
 function imgTag(src, alt){ return `<img src="${src}" alt="${alt}" loading="lazy" onerror="this.outerHTML='<div class=img-fallback>${txt('imageMissing')}</div>'">`; }
 function renderProperties(){
   const filtered = properties.filter(p => currentGroup==='all' ? true : guestGroup(p.guests)===currentGroup);
   const maxPage = Math.max(1, Math.ceil(filtered.length/perPage));
   if(currentPage > maxPage) currentPage = maxPage;
   const items = filtered.slice((currentPage-1)*perPage, (currentPage-1)*perPage + perPage);
-  document.getElementById('propsGrid').innerHTML = items.map(p => `
+  document.getElementById('propsGrid').innerHTML = items.map(p => {
+    const detailUrl = propertyURL(p);
+    const detailAction = detailUrl
+      ? `<a class="btn-detail" href="${detailUrl}">${lang==='es' ? 'Ver ficha' : 'View page'}</a>`
+      : `<button class="btn-detail" onclick="openModal('${p.id}')">${txt('details')}</button>`;
+    return `
     <article class="property-card">
-      <div class="property-img">${imgTag(p.cover, pName(p))}<div class="property-badge">${pBedrooms(p)}</div></div>
+      ${detailUrl ? `<a class="property-link property-img" href="${detailUrl}">${imgTag(p.cover, pName(p))}<div class="property-badge">${pBedrooms(p)}</div></a>` : `<div class="property-img">${imgTag(p.cover, pName(p))}<div class="property-badge">${pBedrooms(p)}</div></div>`}
       <div class="property-info">
-        <div class="property-zone">${pZone(p)}</div>
-        <div class="property-name">${pName(p)}</div>
+        <div class="property-zone">${pZone(p)} · ${p.id}</div>
+        <div class="property-name">${detailUrl ? `<a href="${detailUrl}">${pName(p)}</a>` : pName(p)}</div>
         <div class="property-features"><span class="property-feat">👥 ${pGuests(p)}</span><span class="property-feat">🛁 ${pBathrooms(p)}</span><span class="property-feat">${pAmenities(p).split('·')[0].trim()}</span></div>
-        <div class="property-bottom"><a class="price-link" href="${propertyWA(p)}" target="_blank">${txt('askRates')}</a><button class="btn-detail" onclick="openModal('${p.id}')">${txt('details')}</button></div>
+        <div class="property-bottom"><a class="btn-wa-card" href="${propertyWA(p)}" target="_blank">${lang==='es' ? 'Consultar' : 'Inquire'}</a><div class="property-actions">${detailAction}</div></div>
       </div>
-    </article>`).join('');
+    </article>`;
+  }).join('');
   document.getElementById('prevBtn').disabled = currentPage===1;
   document.getElementById('nextBtn').disabled = currentPage===maxPage;
 }
