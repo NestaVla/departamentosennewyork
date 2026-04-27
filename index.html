@@ -388,6 +388,71 @@ footer{background:#0D0E0E;color:rgba(247,242,234,.66);}
   .story h2{font-size:clamp(2.8rem,13vw,4.5rem);}
 }
 
+
+/* UX FIX v4: prevent hero note/text from sitting behind floating date search */
+.hero{padding-bottom:190px !important;}
+.hero-note{
+  bottom:104px !important;
+  right:calc((100vw - min(var(--container), calc(100vw - 56px)))/2) !important;
+  z-index:3;
+}
+.search-wrap{
+  margin-top:-78px !important;
+  position:relative;
+  z-index:10;
+}
+.search-card{position:relative;z-index:11;}
+@media (max-width:1040px){
+  .hero{padding-bottom:150px !important;}
+  .hero-note{display:none !important;}
+  .search-wrap{margin-top:-62px !important;}
+}
+@media (max-width:680px){
+  .hero{padding-bottom:96px !important;}
+  .search-wrap{margin-top:-46px !important;}
+}
+
+/* === SEO / INTENT HUB v5: pages integrated into the landing === */
+.seo-hub{background:linear-gradient(180deg,var(--section-soft) 0%, #fff 48%, var(--section-mid) 100%);}
+.seo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px;}
+.seo-card{position:relative;min-height:250px;border-radius:24px;overflow:hidden;text-decoration:none;color:#fff;background:#182020;box-shadow:0 18px 54px rgba(16,21,20,.18);isolation:isolate;}
+.seo-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,15,15,.08) 0%,rgba(12,15,15,.62) 55%,rgba(12,15,15,.92) 100%);z-index:-1;}
+.seo-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .5s ease,filter .5s ease;filter:saturate(.86) contrast(.94);}
+.seo-card:hover img{transform:scale(1.06);filter:saturate(1.02) contrast(1.02);}
+.seo-card-body{position:absolute;inset:auto 0 0 0;padding:22px;display:grid;gap:10px;}
+.seo-kicker{font-size:.68rem;text-transform:uppercase;letter-spacing:.18em;color:var(--terracotta);font-weight:900;}
+.seo-card h3{font-size:clamp(1.45rem,2.6vw,2rem);line-height:.95;color:#fff;letter-spacing:.01em;}
+.seo-card p{font-family:var(--font-body);font-size:.9rem;line-height:1.55;color:rgba(247,242,234,.82);}
+.seo-card .seo-link{font-family:var(--font-body);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:#fff;margin-top:4px;}
+.seo-deep{margin-top:54px;display:grid;grid-template-columns:.92fr 1.08fr;gap:30px;align-items:start;}
+.seo-panel{background:var(--section-dark);color:var(--cream);border-radius:28px;padding:clamp(28px,4vw,52px);position:sticky;top:96px;overflow:hidden;}
+.seo-panel .section-tag{color:var(--terracotta);}
+.seo-panel h2{font-size:clamp(3rem,7vw,5.7rem);line-height:.88;color:var(--cream);max-width:520px;}
+.seo-panel p{font-family:var(--font-body);margin-top:24px;color:rgba(247,242,234,.78);line-height:1.75;max-width:520px;}
+.intent-list{display:grid;gap:14px;}
+.intent-item{background:#fff;border:1px solid rgba(38,50,53,.10);border-radius:22px;overflow:hidden;box-shadow:0 10px 32px rgba(38,50,53,.06);}
+.intent-item summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:22px 24px;}
+.intent-item summary::-webkit-details-marker{display:none;}
+.intent-item summary strong{font-size:1.08rem;color:var(--ink);}
+.intent-item summary span{display:block;margin-top:4px;color:var(--muted);font-size:.92rem;line-height:1.5;}
+.intent-item summary::after{content:"+";width:34px;height:34px;border-radius:50%;background:var(--section-soft);display:grid;place-items:center;color:var(--terracotta);font-weight:900;font-size:1.35rem;transition:transform .25s ease;}
+.intent-item[open] summary::after{transform:rotate(45deg);}
+.intent-detail{border-top:1px solid rgba(38,50,53,.08);padding:0 24px 24px;display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.intent-copy{color:var(--muted);line-height:1.75;font-family:var(--font-body);font-size:.94rem;}
+.intent-copy h4{font-family:var(--font-body);font-size:.9rem;text-transform:uppercase;letter-spacing:.12em;color:var(--terracotta);margin:20px 0 8px;font-weight:900;}
+.intent-copy ul{list-style:none;display:grid;gap:8px;margin-top:10px;}
+.intent-copy li{padding-left:20px;position:relative;}
+.intent-copy li::before{content:"→";position:absolute;left:0;color:var(--terracotta);font-weight:900;}
+.intent-cta{align-self:start;background:var(--section-soft);border-radius:18px;padding:20px;display:grid;gap:14px;}
+.intent-cta strong{color:var(--ink);font-size:1rem;}
+.intent-cta p{font-family:var(--font-body);font-size:.9rem;color:var(--muted);line-height:1.6;}
+.intent-cta a{justify-content:center;width:100%;}
+.proof-strip{margin-top:42px;background:var(--section-dark-2);border-radius:28px;padding:clamp(24px,4vw,42px);display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;color:var(--cream);}
+.proof-item{border-left:2px solid var(--terracotta);padding-left:18px;}
+.proof-item strong{display:block;font-size:clamp(2rem,4vw,3.5rem);line-height:.9;color:var(--terracotta);font-family:var(--font-display);}
+.proof-item span{display:block;margin-top:10px;color:rgba(247,242,234,.76);line-height:1.45;font-family:var(--font-body);}
+@media(max-width:1040px){.seo-grid{grid-template-columns:repeat(2,1fr);}.seo-deep{grid-template-columns:1fr;}.seo-panel{position:relative;top:auto;}.proof-strip{grid-template-columns:1fr;}}
+@media(max-width:680px){.seo-grid{grid-template-columns:1fr;gap:14px;}.seo-card{min-height:230px;border-radius:20px;}.seo-card-body{padding:20px;}.seo-panel{border-radius:22px;padding:30px 22px;}.intent-item summary{grid-template-columns:1fr;padding:20px;}.intent-detail{grid-template-columns:1fr;padding:0 20px 20px;}}
 </style>
 </head>
 <body>
@@ -400,6 +465,7 @@ footer{background:#0D0E0E;color:rgba(247,242,234,.66);}
       <li><a href="#beneficios" id="navWhy">Servicios</a></li>
       <li><a href="#reviews" id="navRev">Reviews</a></li>
       <li><a href="#blog" id="navBlog">Guías</a></li>
+      <li><a href="#soluciones">Soluciones</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
     <div class="nav-actions">
@@ -526,6 +592,41 @@ footer{background:#0D0E0E;color:rgba(247,242,234,.66);}
   </div>
 </section>
 
+<section class="section seo-hub" id="soluciones">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-tag">Soluciones por tipo de viaje</div>
+        <h2 class="section-title">Encontrá rápido la opción que encaja con tu estadía.</h2>
+      </div>
+      <p class="section-copy">Sumé a la landing las páginas de intención SEO como bloques de navegación y contenido. El usuario elige si viaja por semana, en grupo, busca Midtown, Upper West Side, studio o reserva sin comisión.</p>
+    </div>
+    <div class="seo-grid reveal" aria-label="Secciones principales de New York Aparts">
+      <a class="seo-card" href="alquiler-temporario-manhattan.html"><img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=900&q=80" alt="Alquiler temporario en Manhattan"><div class="seo-card-body"><div class="seo-kicker">Manhattan</div><h3>Alquiler temporario</h3><p>Departamentos completos por días, semanas o meses, con atención directa por WhatsApp.</p><div class="seo-link">Ver sección →</div></div></a>
+      <a class="seo-card" href="departamentos-sin-comision-nyc.html"><img src="https://images.unsplash.com/photo-1524397057410-1e775ed476f3?auto=format&fit=crop&w=900&q=80" alt="Departamentos sin comisión en NYC"><div class="seo-card-body"><div class="seo-kicker">Ahorro</div><h3>Sin comisión</h3><p>Reservá directo y evitá fees de plataformas. Precio claro desde el primer mensaje.</p><div class="seo-link">Comparar ahorro →</div></div></a>
+      <a class="seo-card" href="apartamentos-por-semana-nyc.html"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=80" alt="Apartamentos por semana en Nueva York"><div class="seo-card-body"><div class="seo-kicker">7+ noches</div><h3>Por semana</h3><p>Ideal para instalarte mejor, bajar el precio por noche y vivir NYC con más calma.</p><div class="seo-link">Ver estadías →</div></div></a>
+      <a class="seo-card" href="departamentos-para-5-personas-nyc.html"><img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=80" alt="Departamentos para grupos en NYC"><div class="seo-card-body"><div class="seo-kicker">Familias & grupos</div><h3>5+ personas</h3><p>Más espacio, cocina propia y mejor costo por persona que varios cuartos de hotel.</p><div class="seo-link">Ver grupos →</div></div></a>
+      <a class="seo-card" href="studios-en-manhattan.html"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80" alt="Studios en Manhattan"><div class="seo-card-body"><div class="seo-kicker">1–2 personas</div><h3>Studios</h3><p>La opción práctica para parejas o viajeros solos que priorizan ubicación y precio.</p><div class="seo-link">Ver studios →</div></div></a>
+      <a class="seo-card" href="midtown-manhattan.html"><img src="https://images.unsplash.com/photo-1613553507747-5f8d62ad5904?auto=format&fit=crop&w=900&q=80" alt="Departamentos en Midtown Manhattan"><div class="seo-card-body"><div class="seo-kicker">Zona premium</div><h3>Midtown</h3><p>Times Square, Broadway, Empire State y subtes cerca: perfecto para primera visita.</p><div class="seo-link">Ver Midtown →</div></div></a>
+      <a class="seo-card" href="upper-west-side.html"><img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=900&q=80" alt="Departamentos en Upper West Side"><div class="seo-card-body"><div class="seo-kicker">Familias</div><h3>Upper West Side</h3><p>Barrio residencial, tranquilo y cerca de Central Park: ideal para estadías familiares.</p><div class="seo-link">Ver UWS →</div></div></a>
+      <a class="seo-card" href="short-stay-nyc.html"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80" alt="Short stay apartments in NYC"><div class="seo-card-body"><div class="seo-kicker">English</div><h3>Short stay NYC</h3><p>English landing for international travelers looking for short-term Manhattan apartments.</p><div class="seo-link">View page →</div></div></a>
+    </div>
+    <div class="seo-deep reveal">
+      <aside class="seo-panel"><div class="section-tag">Guía rápida</div><h2>Elegí por intención, no por azar.</h2><p>Estas secciones convierten mejor porque responden preguntas concretas antes de que el usuario escriba: precio, zona, grupo, duración y tipo de departamento. El buscador sigue siendo el gancho para llevar la consulta a WhatsApp.</p></aside>
+      <div class="intent-list">
+        <details class="intent-item" open><summary><strong>Alquiler temporario en Manhattan</strong><span>Para quien quiere un departamento completo en NYC y atención directa sin intermediarios.</span></summary><div class="intent-detail"><div class="intent-copy"><p>Alternativa real a hoteles y plataformas cuando el cliente busca más espacio, cocina, privacidad y soporte directo.</p><h4>Ideal para</h4><ul><li>Familias que quieren cocinar y descansar mejor.</li><li>Viajeros de negocios o tratamientos médicos.</li><li>Grupos que necesitan más espacio que un hotel.</li></ul></div><div class="intent-cta"><strong>Mensaje sugerido</strong><p>“Hola, quiero consultar alquiler temporario en Manhattan para estas fechas…”</p><a class="btn btn-primary" href="https://wa.me/13522600070?text=Hola%2C%20quiero%20consultar%20alquiler%20temporario%20en%20Manhattan" target="_blank">Consultar por WhatsApp</a></div></div></details>
+        <details class="intent-item"><summary><strong>Departamentos sin comisión en NYC</strong><span>Para usuarios sensibles al precio que vienen comparando Airbnb, Booking y hoteles.</span></summary><div class="intent-detail"><div class="intent-copy"><p>Precio real, sin fee de plataforma ni cargos sorpresa. Esta sección refuerza el diferencial de reservar directo.</p><h4>Beneficios</h4><ul><li>Sin fee de servicio.</li><li>Negociación real para estadías largas.</li><li>Transparencia antes de confirmar.</li></ul></div><div class="intent-cta"><strong>Gancho de conversión</strong><p>Invitá al usuario a comparar el precio final contra Airbnb o Booking.</p><a class="btn btn-primary" href="departamentos-sin-comision-nyc.html">Ver detalle</a></div></div></details>
+        <details class="intent-item"><summary><strong>Apartamentos por semana en Nueva York</strong><span>Para estadías de 7 noches o más, donde el precio por noche y la comodidad importan más.</span></summary><div class="intent-detail"><div class="intent-copy"><p>Una semana permite instalarse, ahorrar en comidas y vivir Nueva York con más ritmo local.</p><h4>Argumentos</h4><ul><li>Mejor precio por noche.</li><li>Cocina propia para ahorrar.</li><li>Mayor comodidad para trabajar o descansar.</li></ul></div><div class="intent-cta"><strong>CTA</strong><p>El buscador de fechas sirve perfecto para cotizar disponibilidad semanal.</p><a class="btn btn-primary" href="apartamentos-por-semana-nyc.html">Ver estadías semanales</a></div></div></details>
+        <details class="intent-item"><summary><strong>Departamentos para 5 o más personas</strong><span>Para familias, grupos de amigos y viajes corporativos que necesitan optimizar costo por persona.</span></summary><div class="intent-detail"><div class="intent-copy"><p>Un departamento entero evita reservar múltiples habitaciones de hotel y mejora el costo por persona.</p><h4>Casos frecuentes</h4><ul><li>Familias de 5 o 6 personas.</li><li>Grupos de amigos.</li><li>Equipos de trabajo o viajes largos.</li></ul></div><div class="intent-cta"><strong>Pregunta clave</strong><p>“¿Cuántas personas viajan y cuántas camas necesitan?”</p><a class="btn btn-primary" href="departamentos-para-5-personas-nyc.html">Ver opciones para grupos</a></div></div></details>
+        <details class="intent-item"><summary><strong>Studios en Manhattan</strong><span>Para parejas o viajeros solos que quieren buena ubicación sin pagar metros extra.</span></summary><div class="intent-detail"><div class="intent-copy"><p>Los studios simplifican la decisión: privacidad, cocina, baño propio y ubicación.</p><h4>Ideal para</h4><ul><li>Parejas.</li><li>Viajeros solos.</li><li>Estadías cortas con presupuesto controlado.</li></ul></div><div class="intent-cta"><strong>CTA</strong><p>Mostrar disponibilidad real por fechas es clave para convertir.</p><a class="btn btn-primary" href="studios-en-manhattan.html">Ver studios</a></div></div></details>
+        <details class="intent-item"><summary><strong>Midtown Manhattan</strong><span>Para primera visita, turismo intensivo, Broadway, Times Square y subte cerca.</span></summary><div class="intent-detail"><div class="intent-copy"><p>Midtown es la zona más fácil de vender al primer viajero: reduce ansiedad logística.</p><h4>Puntos fuertes</h4><ul><li>Times Square, Broadway y Empire State cerca.</li><li>Alta conectividad de metro.</li><li>Ideal para primera vez en NYC.</li></ul></div><div class="intent-cta"><strong>CTA</strong><p>Posicionar Midtown como “opción segura” para primera visita.</p><a class="btn btn-primary" href="midtown-manhattan.html">Ver Midtown</a></div></div></details>
+        <details class="intent-item"><summary><strong>Upper West Side</strong><span>Para familias que quieren una zona residencial, tranquila y cercana a Central Park.</span></summary><div class="intent-detail"><div class="intent-copy"><p>Upper West Side vende calidad de vida: parques, cafés, museos y supermercados.</p><h4>Ideal para</h4><ul><li>Familias con chicos.</li><li>Estadías más largas.</li><li>Viajeros que quieren descansar mejor.</li></ul></div><div class="intent-cta"><strong>CTA</strong><p>Buen argumento para leads que preguntan por seguridad y tranquilidad.</p><a class="btn btn-primary" href="upper-west-side.html">Ver Upper West Side</a></div></div></details>
+        <details class="intent-item"><summary><strong>Short stay NYC</strong><span>Sección en inglés para captar viajeros internacionales buscando short-term rentals.</span></summary><div class="intent-detail"><div class="intent-copy"><p>Landing en inglés para short stay apartments, short-term rentals, Manhattan, no platform fees y WhatsApp booking.</p><h4>Useful for</h4><ul><li>International travelers.</li><li>English-speaking leads.</li><li>Search traffic around “short stay NYC”.</li></ul></div><div class="intent-cta"><strong>CTA</strong><p>Keep this page linked from the main landing to reinforce English search intent.</p><a class="btn btn-primary" href="short-stay-nyc.html">View English page</a></div></div></details>
+      </div>
+    </div>
+    <div class="proof-strip reveal"><div class="proof-item"><strong>0%</strong><span>fee de servicio de plataforma cuando la consulta se gestiona directo.</span></div><div class="proof-item"><strong>5+</strong><span>perfiles de viaje cubiertos: parejas, familias, grupos, estadías semanales y short stay.</span></div><div class="proof-item"><strong>WA</strong><span>todo el flujo termina en WhatsApp: menos fricción, más velocidad y mejor conversión.</span></div></div>
+  </div>
+</section>
 <section class="contact-band" id="contacto">
   <div class="container contact-band-grid">
     <div><h2 class="condensed" id="contactTitle">¿Tenés dudas? Escribinos.</h2><p id="contactSub">Estamos para ayudarte a planear tu viaje y encontrar el departamento perfecto.</p></div>
